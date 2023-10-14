@@ -22,4 +22,4 @@ Any of the items which can be shuffled may also be placed in another player's wo
 
 ## What does another world's item look like in Seedling?
 
-Upgrades, keys, totem shards, or chests.  If Boss Locations are enabled, killing a boss will also send out an item.
+Upgrades, keys, totem shards, or chests. If Boss Locations are enabled, killing a boss will also send out an item.

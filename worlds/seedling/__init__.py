@@ -74,10 +74,10 @@ class SeedlingWorld(World):
                     location_name: location_data.address
                     for location_name, location_data in location_data_table.items()
                     if location_data.region == region_name
-                    and (
-                        getattr(self.multiworld, "boss_locations")[self.player]
-                        or not location_data.is_boss
-                    )
+                       and (
+                               getattr(self.multiworld, "boss_locations")[self.player]
+                               or not location_data.is_boss
+                       )
                 },
                 SeedlingLocation,
             )
@@ -87,16 +87,16 @@ class SeedlingWorld(World):
         generated_rules(self.multiworld, self.player)
 
         if (
-            getattr(self.multiworld, "ending")[self.player].value
-            == Ending.option_bloody
+                getattr(self.multiworld, "ending")[self.player].value
+                == Ending.option_bloody
         ):
             if (
-                getattr(self.multiworld, "difficulty")[self.player].value
-                == Difficulty.option_standard
+                    getattr(self.multiworld, "difficulty")[self.player].value
+                    == Difficulty.option_standard
             ):
                 self.multiworld.completion_condition[self.player] = lambda state: (
-                    has_item(state, self.player, "Ghost Sword")
-                    and has_item(state, self.player, "Conch")
+                        has_item(state, self.player, "Ghost Sword")
+                        and has_item(state, self.player, "Conch")
                 )
             else:
                 self.multiworld.completion_condition[self.player] = lambda state: (
@@ -104,10 +104,10 @@ class SeedlingWorld(World):
                 )
         else:
             self.multiworld.completion_condition[self.player] = lambda state: (
-                has_item(state, self.player, "Ghost Sword")
-                and has_item(state, self.player, "Conch")
-                and has_item(state, self.player, "Penguin's Feather")
-                and (state.item_count("Seal", self.player) >= 16)
+                    has_item(state, self.player, "Ghost Sword")
+                    and has_item(state, self.player, "Conch")
+                    and has_item(state, self.player, "Penguin's Feather")
+                    and (state.item_count("Seal", self.player) >= 16)
             )
 
     def get_filler_item_name(self) -> str:
