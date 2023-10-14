@@ -14,7 +14,6 @@ class SeedlingItemData(NamedTuple):
 
 offset = 20000000
 
-
 item_data_table: dict[str, SeedlingItemData] = {
     "Progressive Sword": SeedlingItemData(
         code=0 + offset, type=ItemClassification.progression
