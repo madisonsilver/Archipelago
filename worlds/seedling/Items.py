@@ -1,6 +1,6 @@
-from typing import NamedTuple, Optional
+from typing import NamedTuple, Optional, Dict
 
-from BaseClasses import Item, ItemClassification, MultiWorld
+from BaseClasses import Item, ItemClassification
 
 
 class SeedlingItem(Item):
@@ -14,7 +14,7 @@ class SeedlingItemData(NamedTuple):
 
 offset = 20000000
 
-item_data_table: dict[str, SeedlingItemData] = {
+item_data_table: Dict[str, SeedlingItemData] = {
     "Progressive Sword": SeedlingItemData(
         code=0 + offset, type=ItemClassification.progression
     ),
