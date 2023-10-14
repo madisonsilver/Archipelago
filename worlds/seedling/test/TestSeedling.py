@@ -30,6 +30,7 @@ class StandardBloodyTest(SeedlingTestBase):
         self.collect_by_name(["Fire Wand Fusion"])
         self.assertTrue(self.can_reach_location("Ghost Spear"))
 
+
 class StandardBloodlessTest(SeedlingTestBase):
     options = {
         "ending": Ending.option_bloodless,
