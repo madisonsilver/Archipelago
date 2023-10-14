@@ -1,6 +1,6 @@
 from typing import Dict
 
-from Options import Choice, Option, Toggle, Range, DeathLink
+from Options import Choice, Toggle, Range, DeathLink, StartInventoryPool, AssembleOptions
 
 
 class Difficulty(Choice):
@@ -35,7 +35,8 @@ class DeathLinkAmnesty(Range):
     default = 15
 
 
-seedling_options: Dict[str, type(Option)] = {
+seedling_options: Dict[str, AssembleOptions] = {
+    "start_inventory_from_pool": StartInventoryPool,
     "difficulty": Difficulty, "boss_locations": BossLocations, "ending": Ending, "deathlink": DeathLink,
     "deathlink_amnesty": DeathLinkAmnesty
 }
