@@ -29,8 +29,6 @@ and enter the server details, your slot name, and a room password if one is requ
 ## Insecure websocket workaround
 
 Currently, the [Seedling Game](https://madisonsilver.github.io/seedling/) site is hosted on an HTTPS-only server, but most browsers will reject  
-connections to insecure websockets (e.g. to archipelago.gg).  There are two ways to work around this:
-- Enable insecure websockets on secure pages in your browser settings.
-- - (e.g. in Basilisk Portable, going to `about:config` then setting `network.websocket.allowInsecureFromHTTPS` to `true`)
-- Download the [Seedling Client](https://github.com/madisonsilver/SeedlingArchipelagoClient/tree/main) from Github and host it locally
-- - Python can host it by running `<path to your python.exe here> -m http.server 8000` in the directory with the client.
+connections to insecure websockets.  There are two ways to work around this:
+- Enable insecure websockets on secure pages in your browser settings. (e.g. in Basilisk Portable, going to `about:config` then setting `network.websocket.allowInsecureFromHTTPS` to `true`)
+- Download the [Seedling Client](https://github.com/madisonsilver/SeedlingArchipelagoClient/tree/main) from Github and host it locally. (e.g Python can host it by running `<path to your python.exe here> -m http.server 8000` in the directory with the client.)

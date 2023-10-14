@@ -21,6 +21,12 @@ class SeedlingWebWorld(WebWorld):
 
 
 class SeedlingWorld(World):
+    """
+    A small boy is born from the wind, appearing in front of a house.
+    He doesn't know his purpose, but knows that this house is important.
+    This house holds his answers--and the beginnings of an arduous journey that will introduce him
+    to creatures and objects he has never seen, as well as bring him to question right and wrong.
+    """
     game = "Seedling"
     option_definitions = seedling_options
     location_name_to_id = location_table
