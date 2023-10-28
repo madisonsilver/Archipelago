@@ -35,8 +35,7 @@ Currently, the [Seedling Game](https://madisonsilver.github.io/seedling/) site i
 most browsers will reject  
 connections to insecure websockets. There are two ways to work around this:
 
-- Enable insecure websockets on secure pages in your browser settings. (e.g. in Basilisk Portable, going
-  to `about:config` then setting `network.websocket.allowInsecureFromHTTPS` to `true`)
+- Enable insecure websockets on secure pages in your browser settings.
 - Download the [Seedling Client](https://github.com/madisonsilver/SeedlingArchipelagoClient/tree/main) from Github and
   host it locally. (e.g Python can host it by running `<path to your python.exe here> -m http.server 8000` in the
   directory with the client.)
