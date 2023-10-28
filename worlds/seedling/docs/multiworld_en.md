@@ -2,8 +2,9 @@
 
 ## Required Software
 
-- A browser supporting Flash (
-  e.g. [Basilisk Portable with Flash Player](https://archive.org/details/basilisk-portable-with-flash))
+Either:
+- A browser that supports Flash Player (Preferred)
+- A browser that supports WASM (Note that, due to performance issues with Ruffle, Seedling may perform slowly or been unable to load.)
 
 ## Create a Config (.yaml) File
 
