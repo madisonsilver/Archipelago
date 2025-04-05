@@ -107,7 +107,7 @@ class SeedlingWorld(World):
                     has_item(state, self.player, "Ghost Sword")
                     and has_item(state, self.player, "Conch")
                     and has_item(state, self.player, "Penguin's Feather")
-                    and (state.item_count("Seal", self.player) >= 16)
+                    and (state.count("Seal", self.player) >= 16)
             )
 
     def get_filler_item_name(self) -> str:

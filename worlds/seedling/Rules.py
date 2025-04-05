@@ -4,20 +4,20 @@ from .Options import Difficulty
 
 def has_item(state: CollectionState, player: int, item: str):
     if item == "Conch":
-        return state.item_count("Progressive Swim", player) >= 1
+        return state.count("Progressive Swim", player) >= 1
     elif item == "Penguin's Feather":
-        return state.item_count("Progressive Swim", player) >= 2
+        return state.count("Progressive Swim", player) >= 2
     elif item == "Sword":
-        return state.item_count("Progressive Sword", player) >= 1
+        return state.count("Progressive Sword", player) >= 1
     elif item == "Shield":
-        return state.item_count("Progressive Shield", player) >= 1
+        return state.count("Progressive Shield", player) >= 1
     elif item == "Dark Shield":
-        return state.item_count("Progressive Shield", player) >= 2
+        return state.count("Progressive Shield", player) >= 2
     elif item == "Shards":
-        return state.item_count("Totem Shard", player) >= 5
+        return state.count("Totem Shard", player) >= 5
     elif item == "Ghost Sword":
         return (
-                state.item_count("Progressive Sword", player) >= 1
+                state.count("Progressive Sword", player) >= 1
                 and state.has("Ghost Spear", player)
                 and state.has("Ghost Sword Fusion", player)
         )
